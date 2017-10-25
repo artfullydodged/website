@@ -1,0 +1,83 @@
+<html>
+
+<!-- START HEAD -->
+
+	<head>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
+		<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+	</head>
+
+<!-- START BODY -->
+
+	<body>
+		<div id='panel-one-content' class="active">
+			<h1>{{ hello }}</h1>
+			<input type="radio" name="one" value="a"> One A<br>
+			<input type="radio" name="one" value="b"> One B<br>
+			<input type="radio" name="one" value="c"> One C
+			<button id="next-panel" value="one-two">next</button>
+		</div>
+
+		<div id='panel-two-content' class="inactive">
+			<h1>Two!</h1>
+			<input type="radio" name="two" value="male"> Two A<br>
+			<input type="radio" name="two" value="female"> Two B<br>
+			<input type="radio" name="two" value="other"> Two C
+			<button id="next-panel" value="two-one">back</button>
+			<button id="next-panel" value="two-three">next</button>
+		</div>
+
+		<div id='panel-three-content' class="inactive">
+			<h1>Three!</h1>
+			<input type="radio" name="three" value="male"> Three A<br>
+			<input type="radio" name="three" value="female"> Three B<br>
+			<input type="radio" name="three" value="other"> Three C
+			<button id="next-panel" value="three-two">back</button>
+			<button id="next-panel" value="three-four">next</button>
+		</div>
+
+		<div id='panel-four-content' class="inactive">
+			<h1>Four!</h1>
+			<input type="radio" name="four" value="male"> Four A<br>
+			<input type="radio" name="four" value="female"> Four B<br>
+			<input type="radio" name="four" value="other"> Four C
+			<button id="next-panel" value="four-three">back</button>
+			<button id="next-panel" value="four-five">next</button>
+		</div>
+
+		<div id='panel-five-content' class="inactive">
+			<h1>Five!</h1>
+			<input type="radio" name="five" value="male"> Five A<br>
+			<input type="radio" name="five" value="female"> Five B<br>
+			<input type="radio" name="five" value="other"> Five C
+			<button id="next-panel" value="five-four">back</button>
+			<button id="next-panel" value="five-six">next</button>
+		</div>
+
+		<div id='panel-six-content' class="inactive">
+			<h1>Six!</h1>
+			<input type="radio" name="six" value="male"> Six A<br>
+			<input type="radio" name="six" value="female"> Six B<br>
+			<input type="radio" name="six" value="other"> Six C				
+			<button id="next-panel" value="six-five">back</button>
+			<hr>
+			<button id="form-submit">See Results!</button>
+		</div>
+
+
+
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
